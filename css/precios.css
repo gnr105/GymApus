@@ -1,0 +1,173 @@
+@media (prefers-color-scheme: dark) {
+    body {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .plan {
+      background: var(--card-dark);
+    }
+  }
+
+  .toggle-container {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .toggle-label {
+    font-weight: bold;
+    margin: 0 10px;
+  }
+
+  .toggle-switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    display: inline-block;
+  }
+
+  .toggle-switch input {
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: var(--primary);
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(30px);
+  }
+
+  .pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .plan {
+    background: var(--card-light);
+    border-radius: 10px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    position: relative;
+  }
+
+  .plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .plan h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+
+  .price {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+
+  .features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .features li {
+    margin: 10px 0;
+    position: relative;
+  }
+
+  .features li .tooltip {
+    border-bottom: 1px dotted #555;
+    cursor: help;
+    position: relative;
+  }
+
+  .features li .tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+
+  .features li .tooltip:hover::after {
+    opacity: 1;
+  }
+
+  /* Toggle precios */
+  .price[data-monthly],
+  .price[data-yearly] {
+    display: none;
+  }
+
+  #toggle:checked ~ .pricing-table .price[data-yearly] {
+    display: block;
+  }
+
+  #toggle:checked ~ .pricing-table .price[data-monthly] {
+    display: none;
+  }
+
+  #toggle:not(:checked) ~ .pricing-table .price[data-monthly] {
+    display: block;
+  }
+
+  #toggle:not(:checked) ~ .pricing-table .price[data-yearly] {
+    display: none;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .btn:hover {
+    background: #388e3c;
+  }

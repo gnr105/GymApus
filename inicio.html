@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>HOME</title>
+    <link rel = "shortcut icon" href="/imagenes/APU´S.ico">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="/html/inicio.html"><img src="../imagenes/APU´S.png" alt=""></a>
+            </div>
+            
+            <div class="dropdown" style="float:right;">
+                    <button class="dropbtn"><img src="../imagenes/menu-regular-24.png" alt=""></button>
+                    <div class="dropdown-content">
+                        <a href="/html/inicio.html">INICIO</a>
+                        <a href="/html/clases.html">CLASES</a>
+                        <a href="/html/entrenador.html">ENTRENADOR</a>
+                        <a href="/html/precios.html">PRECIOS</a>
+                        <a href="/html/blog.html">BLOG</a>
+                        <a href="/html/contacto.html">CONTACTO</a>    
+                    </div>
+            </div>      
+        </div>
+    </header>
+    <section class="hero">
+        <video autoplay muted loop>
+          <source src="https://videos.pexels.com/video-files/3209068/3209068-uhd_2560_1440_25fps.mp4" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+        <div class="overlay"></div>
+        <div class="text-container">
+          <h1>Desafiá tus límites</h1>
+          <p>Entrená duro. Viví fuerte. Superá cada día.</p>
+        </div>
+      </section>
+    <section class="contenido wrapper">
+        <h1 style="color: #ca8a8a; text-align: center;">CLASES DESTACADAS</h1>
+       <table>
+        <tr>
+            <td rowspan="2">
+                <div class="card">
+                    <img src="/imagenes/musculacion.jpg" alt="musculacion">
+                    <p><b>
+                        Clases de musculación de madrugada es un exito, ayuda a una mejor salud fisica, SUMATE!.
+                    </b>
+                    </p>
+                </div>
+                <div class="card2">
+                    <img src="/imagenes/crossfit.jpg" alt="crossfit">
+                    <p><b>
+                        Clases de CROSSFIT ayudan a una mejor musculatura y resistencia. Veni al turno mañana.
+                    </b>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="/imagenes/funcional.jpg" alt="funcional">
+                    <p><b>
+                        Funcional para personas adulto y adaptados de 15 a 17 hs.
+                    </b>
+                    </p>
+                </div>
+                <div class="card2">
+                    <img src="/imagenes/chris.jpg" alt="thor">
+                    <p><b>
+                        Visita Especial de THOR, veni a las clases del actor de thor, referido a crossfit, musculacion y funcional.
+                    </b>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="/imagenes/pilates.jpg" alt="pilates">
+                    <p><b>
+                        Pilates, una practica que va ganando mas adeptos, sumate a las clases!
+                    </b>
+                    </p>
+                </div>
+                <div class="card2">
+                    <img src="/imagenes/yoga.jpg" alt="yoga">
+                    <p><b>
+                        Clases gratuitas de YOGA, los días Sabados para toda la comunidad.
+                    </b>
+                    </p>
+                </div>
+            </td>
+        </tr>
+       </table>
+    
+    </section>
+    <div class="contador">
+        <span class="numero" id="numero">0</span>+ socios satisfechos
+    </div>
+    <script>
+        let numero = document.getElementById("numero");
+        let contador = 0;
+        let objetivo = 500;
+        let velocidad = 30;  // Milisegundos
+
+        function incrementarContador() {
+            if (contador < objetivo) {
+                contador++;
+                numero.textContent = contador;
+                setTimeout(incrementarContador, velocidad);
+            }
+        }
+
+        // Iniciar la animación
+        incrementarContador();
+    </script>
+    <div class="carousel">
+        <!-- Radio Buttons -->
+        <input type="radio" name="testimonial" id="t1" checked>
+        <input type="radio" name="testimonial" id="t2">
+        <input type="radio" name="testimonial" id="t3">
+    
+        <!-- Testimonios -->
+        <div class="testimonial t1">
+          <p>"Entrenar acá cambió mi vida. Nunca me sentí tan fuerte y motivado."</p>
+          <h4>— Martín G.</h4>
+        </div>
+    
+        <div class="testimonial t2">
+          <p>"El mejor ambiente y entrenadores. Progresé más en 3 meses que en 2 años."</p>
+          <h4>— Camila R.</h4>
+        </div>
+    
+        <div class="testimonial t3">
+          <p>"Clases intensas, pero divertidas. ¡Me levantan el ánimo todos los días!"</p>
+          <h4>— Tomás V.</h4>
+        </div>
+    
+        <!-- Controles -->
+        <div class="controls">
+          <label for="t1"></label>
+          <label for="t2"></label>
+          <label for="t3"></label>
+        </div>
+      </div>
+      <footer>
+        <div class="img-footer">
+            <img class="logo-footer" src="/imagenes/APU´S.png">
+        </div>
+        <h2>Suscribite a nuestro Newsletter</h2>
+            <form action="#" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        <h2>Encontranos en el mapa</h2>
+    <div class="map-container">
+      <!-- Google Maps embebido -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.352700979983!2d-65.29362362394998!3d-24.194423985156195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f56d6dbf3ab%3A0x812cd9c176faec8c!2sPower%20Center%20Gym!5e0!3m2!1ses!2sar!4v1744407619434!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+        <div class="redes-footer">
+            <a href="https://www.facebook.com/AcademiaOneFit/?locale=es_LA"><img class="icon-footer" src="/imagenes/fb.png" alt=""></a>
+            <a href="#"><img class="icon-footer" src="/imagenes/wpp.png" alt=""></a>
+            <a href="#"><img class="icon-footer" src="/imagenes/gmail.png" alt=""></a>
+            <a href="https://www.instagram.com/power.cf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="icon-footer" src="/imagenes/ig.png" alt=""></a>
+        </div>
+        <hr>
+        <h4 style="color: #437a9e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Copyright ©2025 INFONews Argentina.</h4>
+    </footer>
+</body>
+</html>
