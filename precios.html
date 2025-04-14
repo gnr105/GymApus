@@ -1,1 +1,107 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/precios.css">
+    
+    <title>PRECIOS</title>
+    <link rel = "shortcut icon" href="/imagenes/APU´S.ico">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+              <a href="/index.html"><img src="../imagenes/APU´S.png" alt=""></a>
+            </div>
+            
+            <div class="dropdown" style="float:right;">
+                    <button class="dropbtn"><img src="../imagenes/menu-regular-24.png" alt=""></button>
+                    <div class="dropdown-content">
+                        <a href="/index.html">INICIO</a>
+                        <a href="/clases.html">CLASES</a>
+                        <a href="/entrenador.html">ENTRENADOR</a>
+                        <a href="/precios.html">PRECIOS</a>
+                        <a href="/blog.html">BLOG</a>
+                        <a href="/contacto.html">CONTACTO</a>    
+                    </div>
+            </div> 
+             
+        </div>
+    </header>
+    <div class="toggle-container">
+        <span class="toggle-label">Mensual</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle">
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Anual</span>
+      </div>
+    
+      <div class="pricing-table">
+    
+        <div class="plan">
+          <h3>Básico</h3>
+          <div class="price" id="precio-basico">$10<span>/mes</span></div>
+          <div class="price" id="precio-basico-anual">$100<span>/año</span></div>
+          <ul class="features">
+            <li><span class="tooltip" data-tooltip="Acceso a entrenamientos grabados">Entrenamientos grabados</span></li>
+            <li><span class="tooltip" data-tooltip="3 rutinas por semana">Rutinas limitadas</span></li>
+            <li><span class="tooltip" data-tooltip="Soporte vía correo">Soporte básico</span></li>
+          </ul>
+          <a href="https://www.onfit.com.ar/pruebaonfit.html" class="btn">Contratar</a>
+        </div>
+    
+        <div class="plan">
+          <h3>Intermedio</h3>
+          <div class="price" id="precio-intermedio">$15<span>/mes</span></div>
+          <div class="price" id="precio-intermedio-anual">$150<span>/año</span></div>
+          <ul class="features">
+            <li><span class="tooltip" data-tooltip="Acceso a entrenamientos y clases en vivo">Acceso completo</span></li>
+            <li><span class="tooltip" data-tooltip="5 rutinas semanales personalizadas">Rutinas personalizadas</span></li>
+            <li><span class="tooltip" data-tooltip="Soporte por chat y correo">Soporte estándar</span></li>
+          </ul>
+          <a href="https://www.onfit.com.ar/pruebaonfit.html" class="btn">Contratar</a>
+        </div>
+    
+        <div class="plan">
+          <h3>Premium</h3>
+          <div class="price" id="precio-premium">$20<span>/mes</span></div>
+          <div class="price" id="precio-premium-anual">$200<span>/año</span></div>
+          <ul class="features">
+            <li><span class="tooltip" data-tooltip="Acceso ilimitado + sesiones 1 a 1">Todo ilimitado</span></li>
+            <li><span class="tooltip" data-tooltip="Rutinas diarias 100% adaptadas">Coaching personalizado</span></li>
+            <li><span class="tooltip" data-tooltip="Soporte premium 24/7">Soporte VIP</span></li>
+          </ul>
+          <a href="https://www.onfit.com.ar/pruebaonfit.html" class="btn">Contratar</a>
+        </div>
+    
+      </div>
+      <script src="/javascript/precios.js"></script>
+      <footer>
+        <div class="img-footer">
+            <img class="logo-footer" src="/imagenes/APU´S.png">
+        </div>
+        <h2>Suscribite a nuestro Newsletter</h2>
+            <form action="#" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        <h2>Encontranos en el mapa</h2>
+    <div class="map-container">
+      <!-- Google Maps embebido -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.352700979983!2d-65.29362362394998!3d-24.194423985156195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f56d6dbf3ab%3A0x812cd9c176faec8c!2sPower%20Center%20Gym!5e0!3m2!1ses!2sar!4v1744407619434!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+        <div class="redes-footer">
+          <a href="https://www.facebook.com/AcademiaOneFit/?locale=es_LA"><img class="icon-footer" src="/imagenes/fb.png" alt=""></a>
+          <a href="#"><img class="icon-footer" src="/imagenes/wpp.png" alt=""></a>
+          <a href="#"><img class="icon-footer" src="/imagenes/gmail.png" alt=""></a>
+          <a href="https://www.instagram.com/power.cf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="icon-footer" src="/imagenes/ig.png" alt=""></a>
+      </div>
+        <hr>
+        <h4 style="color: #437a9e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Copyright ©2025 INFONews Argentina.</h4>
+    </footer>
+</body>
+</html>
